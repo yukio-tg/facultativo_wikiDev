@@ -1,0 +1,58 @@
+@media (max-width: 768px) {
+
+    .header-infos {
+       display: none;
+    }
+
+    header {
+        z-index: 1000;
+    }
+
+    .logo-block {
+        transform: scale(0.9);
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav a:last-child{
+        display: none;
+    }
+
+    nav a#asideToggle {
+        display: inline;
+        color: var(--amber);
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        background: var(--bg);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 1001;
+        padding: 20px;
+    }
+
+    aside.visible {
+        transform: translateX(0);
+    }
+
+    div#asideOverlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(3px);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+}
