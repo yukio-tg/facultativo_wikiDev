@@ -341,7 +341,7 @@ ul li.delta a {
 }
 
 ul li.delta a::after {
-    content: 'δ';
+    content: 'Δ';
     font-size: 1.2em;
 }
 
@@ -809,6 +809,7 @@ article h3 {
 article h1 {
     font-size: 2em;
     border-bottom: 0;
+    text-transform: uppercase;
 }
 
 article h2 {
@@ -825,6 +826,10 @@ article section p {
     font-size: 1.1em;
 }
 
+section ol, section ul {
+    margin-left: 30px;
+}
+
 blockquote {
     border-left: 3px solid var(--border);
     padding-left: 12px;
@@ -839,6 +844,10 @@ blockquote .author {
     font-style: normal;
     display: block;
     color: var(--text);
+}
+
+blockquote .author::before{
+    content: '— '
 }
 
 q {
@@ -902,15 +911,14 @@ q {
 }
 
 .card {
-    width: 100%;
-}
-
-.card {
     background: var(--panel);
     border: 1px solid var(--border);
     cursor: pointer;
     transition: all 0.2s;
     overflow: hidden;
+    width: 100%;
+    text-decoration: none;
+    color: var(--text);
 }
 
 .card:hover {

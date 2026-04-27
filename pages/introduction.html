@@ -10,9 +10,23 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article-style.css">
     <link rel="stylesheet" href="media-query.css">
     <link rel="stylesheet" href="image-abrir.css">
+
+    <style>
+        .header-centro{
+            flex-direction: column;
+        }
+
+        article h1{
+            text-align: center;
+        }
+
+        article h2, article h3{
+            margin-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,11 +72,11 @@
                 <div class="aside-block">
                     <div class="block-title">ENTIDADES CATALOGADAS</div>
                     <ul>
-                        <li class="delta"><a><span class="symbol">S</span>Carniceiros</a></li>
-                        <li class="gamma"><a><span class="symbol">C</span>Legente</a></li>
-                        <li class="beta"><a><span class="symbol">E</span>Diabólicos</a></li>
-                        <li class="alpha"><a><span class="symbol">M</span>Parasita Atemporal</a></li>
-                        <li class="omega"><a><span class="symbol">C</span>O Tribunal</a></li>
+                        <li class="delta"><a href="carniceiros-article.html"><span class="symbol">S</span>Carniceiros</a></li>
+                        <li class="gamma"><a href="legente-article.html"><span class="symbol">C</span>Legente</a></li>
+                        <li class="beta"><a href="diabolicos-article.html"><span class="symbol">E</span>Diabólicos</a></li>
+                        <li class="alpha"><a href="parasita-atemporal_article.html"><span class="symbol">M</span>Parasita Atemporal</a></li>
+                        <li class="omega"><a href="tribunal-article.html"><span class="symbol">C</span>O Tribunal</a></li>
                     </ul>
 
                 </div>
@@ -78,26 +92,7 @@
                     </div>
                 </div>
 
-                <!-- INICIO DO block PRINCIPAL -->
                 <div class="relatorio-card">
-                    <div class="relatorio-header">
-                        <div class="relatorio-info">
-                            <div class="tags">
-                                <span class="tag ameaca-delta"></span>
-                                <span class="tag class-espirito"></span>
-                            </div>
-                            <div class="nome-entidade">Nome da Entidade</div>
-                            <div class="vulgos">Vulgos</div>
-                            <a class="botao-ficha" href="#" target="_blank">
-                                ACESSAR FICHA COMPLETA
-                            </a>
-                        </div>
-                        <div class="relatorio-imagem">
-                            <div class="relatorio-foto"><img src="../img/white-obscura-logo.png" class="imagem-clicavel">
-                            </div>
-                            <div class="desc-image">Imagem</div>
-                        </div>
-                    </div>
                     <div class="featured-description">
                         <article>
                             <h1>Descrição</h1>
@@ -173,11 +168,10 @@
                 </div>
 
                 <div class="suggestions">
-                    <!-- ENTITY GRID -->
                     <div class="divisor-suggestions">ENTIDADES CATALOGADAS — MAIS RECENTES</div>
                     <div class="cards">
 
-                        <div class="card">
+                        <a href="parasita_atemporal-article.html" class="card">
                             <div class="card-header">
                                 <div class="card-icon alpha">M</div>
                                 <div>
@@ -190,9 +184,9 @@
                                     Mantém-se imortal, fadada à vagar de corpo em corpo. Seus poder é a onisciência
                                     temporal.</div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="card">
+                        <a href="tribunal-article.html" class="card">
                             <div class="card-header">
                                 <div class="card-icon omega">C</div>
                                 <div>
@@ -206,9 +200,9 @@
                                     Há razões para acreditar que sejam a organização cultista mais antiga já formada
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="card">
+                        <a href="diabolicos-article.html" class="card">
                             <div class="card-header">
                                 <div class="card-icon beta">E</div>
                                 <div>
@@ -220,9 +214,9 @@
                                 <div class="card-desc">Manifestação de medos primitivos causados pelo viés religioso de
                                     um coletivo. As entidades encarnam vilões e então instauram o caos.</div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="card">
+                        <a href="legente-article.html" class="card">
                             <div class="card-header">
                                 <div class="card-icon gamma">C</div>
                                 <div>
@@ -236,7 +230,7 @@
                                     Particularmente poderosa pela sua versatilidade de formas e invocações.
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
